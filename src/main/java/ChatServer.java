@@ -16,10 +16,9 @@ public class ChatServer {
     public void onOpen(Session userSession, @PathParam("username") String username) throws IOException {
         onMessage("User: " + username + " has connected to the chat", userSession);
     }
-//LOL//
 
-
-    //LOL2//
+    //LOL//
+    //Sivoborodko//
     @OnClose
     public void onClose(Session userSession) throws IOException {
         System.out.println(userSession.getOpenSessions().size());
