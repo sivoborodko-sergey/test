@@ -18,6 +18,8 @@ public class ChatServer {
     }
 //LOL//
 
+
+    //LOL2//
     @OnClose
     public void onClose(Session userSession) throws IOException {
         System.out.println(userSession.getOpenSessions().size());
