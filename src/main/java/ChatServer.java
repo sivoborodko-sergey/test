@@ -17,6 +17,7 @@ public class ChatServer {
         onMessage("User: " + username + " has connected to the chat", userSession);
     }
 //LOL//
+    //SIVOBORODKO//
 
     @OnClose
     public void onClose(Session userSession) throws IOException {
@@ -27,7 +28,7 @@ public class ChatServer {
     @OnMessage
     public void onMessage(String message, Session userSession) {
         for (Session session : userSession.getOpenSessions()) {
-                session.getAsyncRemote().sendText(message);
+            session.getAsyncRemote().sendText(message);
         }
     }
 }
