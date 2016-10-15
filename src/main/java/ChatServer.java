@@ -17,7 +17,6 @@ public class ChatServer {
         onMessage("User: " + username + " has connected to the chat", userSession);
     }
 //LOL//
-    //SIVOBORODKO//
 
     @OnClose
     public void onClose(Session userSession) throws IOException {
